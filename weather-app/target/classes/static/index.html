@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	 <video autoplay muted loop id="background-video">
+        <source src="https://videos.pexels.com/video-files/2611250/2611250-uhd_2560_1440_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <header>
+            <h1>Weather App</h1>
+            <p>Get real-time weather data with style!</p>
+        </header>
+        <main>
+            <section class="form-section">
+                <h2>Fetch Weather Data</h2>
+                <form id="weather-form">
+                    <input type="text" id="location" placeholder="Enter location" required>
+                    <select id="weather-type">
+						<option value="summary">Weather Summary</option>
+                        <option value="detailed">Detailed Weather</option>
+                    </select>
+                    <button type="submit">Get Weather</button>
+                </form>
+            </section>
+            <section class="result-section" id="result-section">
+                <h2>Weather Details</h2>
+                <div id="weather-details"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Creative Weather App. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
